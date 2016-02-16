@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunarIllusions", "LunarIllusions\LunarIllusions.csproj", "{15461D2C-18CF-44A4-B262-C8297048EB9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapEditor", "MapEditor\MapEditor.csproj", "{F0001D1A-5FF0-4791-937B-24C5777EDE79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15461D2C-18CF-44A4-B262-C8297048EB9C}.Debug|x86.ActiveCfg = Debug|x86
+		{15461D2C-18CF-44A4-B262-C8297048EB9C}.Debug|x86.Build.0 = Debug|x86
+		{15461D2C-18CF-44A4-B262-C8297048EB9C}.Release|x86.ActiveCfg = Release|x86
+		{15461D2C-18CF-44A4-B262-C8297048EB9C}.Release|x86.Build.0 = Release|x86
+		{F0001D1A-5FF0-4791-937B-24C5777EDE79}.Debug|x86.ActiveCfg = Debug|x86
+		{F0001D1A-5FF0-4791-937B-24C5777EDE79}.Debug|x86.Build.0 = Debug|x86
+		{F0001D1A-5FF0-4791-937B-24C5777EDE79}.Release|x86.ActiveCfg = Release|x86
+		{F0001D1A-5FF0-4791-937B-24C5777EDE79}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
