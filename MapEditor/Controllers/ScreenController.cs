@@ -8,12 +8,13 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace MapEditor.Controllers
 {
-    class CameraController
+    class ScreenController
     {
 
         public Viewport View { get { return view; } }
         public Vector2 Position { get { return position; } }
         public Vector2 FocusPoint { get { return focusPoint; } }
+        public Vector2 PositionOffset { get { return currentOffset; } }
         public Rectangle ScreenView
         {
             get
@@ -28,9 +29,9 @@ namespace MapEditor.Controllers
         private float zoom;
         private Matrix transform;
         private Vector2 source =Vector2.Zero;
-        private Vector2 currentOffset = Vector2.Zero;
+        public Vector2 currentOffset = Vector2.Zero;
 
-        public CameraController(Viewport view, Vector2 position)
+        public ScreenController(Viewport view, Vector2 position)
         {
             this.view = view;
             this.position = position;
@@ -72,8 +73,10 @@ namespace MapEditor.Controllers
                 moveOffset.X += 5;
 
             source += moveOffset;
-            MapManager.Instance.MouseObject.UpdateOffset(moveOffset);
+            currentOffset += moveOffset;
 
+            MapManager.Instance.MouseObject.UpdateOffset(moveOffset);
+            
             Vector2 objectPosition = source;
 
             transform = Matrix.CreateTranslation(new Vector3(-objectPosition, 0)) *

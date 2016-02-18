@@ -23,3 +23,28 @@ c:\users\alexander\documents\visual studio 2015\Projects\LunarIllusions\LunarIll
 c:\users\alexander\documents\visual studio 2015\Projects\LunarIllusions\LunarIllusions\obj\x86\Debug\LunarIllusions.csprojResolveAssemblyReference.cache
 c:\users\alexander\documents\visual studio 2015\Projects\LunarIllusions\LunarIllusions\obj\x86\Debug\LunarIllusions.exe
 c:\users\alexander\documents\visual studio 2015\Projects\LunarIllusions\LunarIllusions\obj\x86\Debug\LunarIllusions.pdb
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\obj\x86\Debug\LunarIllusions.exe
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\obj\x86\Debug\LunarIllusions.pdb
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\LunarIllusions.exe
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\LunarIllusions.pdb
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\MonoGame.Framework.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\obj\x86\Debug\LunarIllusions.csprojResolveAssemblyReference.cache

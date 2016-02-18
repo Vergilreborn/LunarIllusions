@@ -53,11 +53,22 @@ namespace MapEditor
             bool textureNeeded = !loadedTextures.ContainsKey(TextureName);
             if (textureNeeded)
             {
-                Texture2D texture = GameServices.GetService<ContentManager>().Load<Texture2D>(TextureName);
+                ContentManager contentManager = GameServices.GetService<ContentManager>();
+                Texture2D texture = contentManager.Load<Texture2D>(TextureName);
                 loadedTextures.Add(TextureName, texture);
             }
 
             return loadedTextures[TextureName];
+        }
+
+        public void SaveGlobalTexture(Texture2D Texture, String TextureName)
+        {
+            bool textureNeeded = !loadedTextures.ContainsKey(TextureName);
+            if (textureNeeded)
+            {
+                Texture2D texture = Texture;
+                loadedTextures.Add(TextureName, texture);
+            }
         }
 
         public void DeleteTexture(String TextureName)

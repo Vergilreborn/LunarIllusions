@@ -34,3 +34,41 @@ C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LunarIllusions\MapEdito
 C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LunarIllusions\MapEditor\bin\Windows\Debug\Content\LunchdoubleSo.xnb
 C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LunarIllusions\MapEditor\bin\Windows\Debug\Content\Button\Left.png
 C:\Users\Alexander\Documents\Visual Studio 2015\Projects\LunarIllusions\MapEditor\bin\Windows\Debug\Content\Button\Right.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\obj\x86\Debug\MapEditor.exe
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\obj\x86\Debug\MapEditor.pdb
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\obj\x86\Debug\MapEditor.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\Button\Bottom.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\Button\BottomLeft.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\Button\BottomRight.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\Button\Left.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\Button\Right.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\Button\Top.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\Button\TopLeft.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\Button\TopRight.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\lunchds.ttf
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\LunchdoubleSo.spritefont
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Configuration\SpriteSheetConfiguration.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\SpriteSheet\Test.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\Content\LunchdoubleSo.xnb
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\MapEditor.exe
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\MapEditor.pdb
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\MonoGame.Framework.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.Direct3D9.xml

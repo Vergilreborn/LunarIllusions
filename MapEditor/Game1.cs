@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MapEditor.Controllers;
+using MapEditor.Sprites;
 
 namespace MapEditor
 {
@@ -13,8 +14,8 @@ namespace MapEditor
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         MapManager mapManager;
-        CameraController Camera;
-
+        ScreenController Screen;
+        SpriteSheetManager SpriteSheetManager;
         ButtonController btn;
         SpriteFont spriteFont;
 
@@ -28,8 +29,8 @@ namespace MapEditor
             this.IsMouseVisible = true;
             
             mapManager = new MapManager();
+            SpriteSheetManager = new SpriteSheetManager();
 
-            
 
 
         }
@@ -49,6 +50,7 @@ namespace MapEditor
             GameServices.Instance.AddService(Content);
             //mapManager.Initialize(graphics);
             btn = new ButtonController("File", 20, 20, 200, 50, "LoremIpsum");
+            
         }
 
         /// <summary>
@@ -60,8 +62,9 @@ namespace MapEditor
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             mapManager.LoadContent(spriteBatch);
-            Camera = new CameraController(graphics.GraphicsDevice.Viewport, Vector2.Zero);
+            Screen = new ScreenController(graphics.GraphicsDevice.Viewport, Vector2.Zero);
 
+            SpriteSheetManager.LoadContent(Content);
 
             spriteFont = Content.Load<SpriteFont>("LunchdoubleSo");
 
@@ -88,8 +91,10 @@ namespace MapEditor
                 Exit();
 
             // TODO: Add your update logic here
-            Camera.Update(gameTime);
+            Screen.Update(gameTime);
             mapManager.Update(gameTime);
+            if(mapManager.KeyboardObject.KeyDown("Tab")) //TO DO REMOVE
+                SpriteSheetManager.Update(Screen.PositionOffset);
             btn.Update();
             base.Update(gameTime);
         }
@@ -105,9 +110,11 @@ namespace MapEditor
             // TODO: Add your drawing code here
             //spriteBatch.Begin();
             
-            Camera.Draw(spriteBatch);
+            Screen.Draw(spriteBatch);
             mapManager.Draw(spriteBatch,gameTime);
             btn.Draw(spriteBatch, spriteFont);
+            if (mapManager.KeyboardObject.KeyDown("Tab")) //TO DO REMOVE
+                 SpriteSheetManager.Draw(spriteBatch,Screen.PositionOffset);
             spriteBatch.End();
 
             base.Draw(gameTime);
