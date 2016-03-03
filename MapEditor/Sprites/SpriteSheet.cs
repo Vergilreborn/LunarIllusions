@@ -24,6 +24,7 @@ namespace MapEditor.Sprites
         private int TileXCount;
         private int TileYCount;
         private Tile CurrentOver;
+        private Tile Selected;
 
         public SpriteSheet()
         {
@@ -73,11 +74,12 @@ namespace MapEditor.Sprites
             {
                 CurrentOver = Tiles[xTileOver, yTileOver];
             }
-
-            //Draw selected Tile
-            if (mouse.LeftMouseAction == MouseAction.MouseDown)
+            
+            if (mouse.LeftMouseAction == MouseAction.MouseDown && validXTile && validYTile)
             {
                 //set Selected
+                Selected = Tiles[xTileOver, yTileOver];
+                
             }
         }
 
@@ -98,15 +100,25 @@ namespace MapEditor.Sprites
                 ContentConfiguration.Instance.DrawRectangle(spriteBatch, destRec, Color.DarkGray);
             }
 
-            if (CurrentOver != null)
+            if (Selected != null)
+            {
+                Rectangle destRec = new Rectangle(Selected.DestinationRectangle.X + (int)camPosition.X
+                                                , Selected.DestinationRectangle.Y + (int)camPosition.Y
+                                                , Selected.DestinationRectangle.Width
+                                                , Selected.DestinationRectangle.Height);
+                spriteBatch.Draw(whiteRectangle, destRec, new Color(Color.Blue, Configuration.OpacityLevel));
+                ContentConfiguration.Instance.DrawRectangle(spriteBatch, destRec, Color.DarkRed);
+            }else if (CurrentOver != null)
             {
                 Rectangle destRec = new Rectangle(CurrentOver.DestinationRectangle.X + (int)camPosition.X
                                                 , CurrentOver.DestinationRectangle.Y + (int)camPosition.Y
                                                 , CurrentOver.DestinationRectangle.Width
                                                 , CurrentOver.DestinationRectangle.Height);
-                spriteBatch.Draw(whiteRectangle, destRec, new Color(Color.Red,0.5f));
+                spriteBatch.Draw(whiteRectangle, destRec, new Color(Color.Red,Configuration.OpacityLevel));
                 ContentConfiguration.Instance.DrawRectangle(spriteBatch, destRec, Color.DarkRed);
             }
+
+          
         }
 
 

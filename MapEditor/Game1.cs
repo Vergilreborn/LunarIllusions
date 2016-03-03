@@ -16,9 +16,9 @@ namespace MapEditor
         MapManager mapManager;
         ScreenController Screen;
         SpriteSheetManager SpriteSheetManager;
-        ButtonController btn;
+       // ButtonController btn;
         SpriteFont spriteFont;
-
+      //  TileSelectorController tileSelector;
 
         /////TESTING BUTTONS END
         public Game1()
@@ -30,7 +30,7 @@ namespace MapEditor
             
             mapManager = new MapManager();
             SpriteSheetManager = new SpriteSheetManager();
-
+        //    tileSelector = new TileSelectorController();
 
 
         }
@@ -49,7 +49,7 @@ namespace MapEditor
             GameServices.Instance.AddService(GraphicsDevice);
             GameServices.Instance.AddService(Content);
             //mapManager.Initialize(graphics);
-            btn = new ButtonController("File", 20, 20, 200, 50, "LoremIpsum");
+           // btn = new ButtonController("File", 20, 20, 200, 50, "LoremIpsum");
             
         }
 
@@ -87,15 +87,15 @@ namespace MapEditor
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+          //  if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+          //      this.Exit();// Exit();
 
             // TODO: Add your update logic here
             Screen.Update(gameTime);
             mapManager.Update(gameTime);
             if(mapManager.KeyboardObject.KeyDown("Tab")) //TO DO REMOVE
                 SpriteSheetManager.Update(Screen.PositionOffset);
-            btn.Update();
+           // btn.Update();
             base.Update(gameTime);
         }
 
@@ -112,7 +112,7 @@ namespace MapEditor
             
             Screen.Draw(spriteBatch);
             mapManager.Draw(spriteBatch,gameTime);
-            btn.Draw(spriteBatch, spriteFont);
+           // btn.Draw(spriteBatch, spriteFont);
             if (mapManager.KeyboardObject.KeyDown("Tab")) //TO DO REMOVE
                  SpriteSheetManager.Draw(spriteBatch,Screen.PositionOffset);
             spriteBatch.End();

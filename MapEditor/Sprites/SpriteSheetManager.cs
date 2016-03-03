@@ -42,7 +42,6 @@ namespace MapEditor.Sprites
 
         internal void Draw(SpriteBatch spriteBatch, Vector2 camPosition)
         {
-            Console.WriteLine(camPosition);
             this.SpriteSheetConfig.Draw(spriteBatch, camPosition);
         }
     }

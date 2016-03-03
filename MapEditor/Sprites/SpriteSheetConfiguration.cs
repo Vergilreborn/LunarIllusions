@@ -12,6 +12,8 @@ namespace MapEditor.Sprites
     {
 
         public SpriteSheet[] SpriteSheets;
+        public SpriteSheet active;
+
         public SpriteSheetConfiguration()
         {
             SpriteSheets = new SpriteSheet[0]; //Setting up an empty array
@@ -33,6 +35,9 @@ namespace MapEditor.Sprites
             {
                 sheet.Update(camPosition);
             }
+
+            //TODO: Remove the hardcoded spriteSheet selected. Udating the code to actually use sprite sheet graphics
+            active = SpriteSheets[0];
         }
 
         internal void Draw(SpriteBatch spriteBatch, Vector2 camPosition)

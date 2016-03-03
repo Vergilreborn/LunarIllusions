@@ -21,3 +21,12 @@ LunarIllusions
   Level Design
       Dynamically generate a map/random world (Keep Completely random if possible NO SEEDS)
   
+Internal Development
+  Selected tile to grab the current level of data from the sprite sheet
+  Expand the Tile.cs class for storing the source rectangle inside of the sprite sheet (x,y) coordinates might be fine for now
+  Dynamically generate buttons for UI layout. 
+  Develop methods to call from dynamically generated buttons. 
+
+Research
+  See if we can allow compile code for the user to develop button functionality. 
+  For example add a copy function, paste, cut, move, ...etc

@@ -17,6 +17,7 @@ namespace MapEditor
 
         #region Float based configuration
         public static float ClickTimer = 300f;    //Time to check click
+        public static float OpacityLevel = 0.5f;  //Opacity of the overlay 0.0 - 1.0
         #endregion
 
         #region String based configuration

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Alexander/Desktop/GamesDevelopment/LunarIllusions/MapEditor/Content/LunchdoubleSo.spritefont</SourceFile>
-  <SourceTime>2016-02-15T20:59:29.5672044-05:00</SourceTime>
-  <DestFile>C:/Users/Alexander/Desktop/GamesDevelopment/LunarIllusions/MapEditor/Content/bin/Windows/LunchdoubleSo.xnb</DestFile>
-  <DestTime>2016-02-17T22:58:36.917915-05:00</DestTime>
+  <SourceFile>C:/Users/Amartin/Desktop/GameDevelopment/LunarIllusions/MapEditor/Content/LunchdoubleSo.spritefont</SourceFile>
+  <SourceTime>2016-02-16T17:24:13.2445078-05:00</SourceTime>
+  <DestFile>C:/Users/Amartin/Desktop/GameDevelopment/LunarIllusions/MapEditor/Content/bin/Windows/LunchdoubleSo.xnb</DestFile>
+  <DestTime>2016-02-22T11:24:46.5638558-05:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
-  <ImporterTime>2015-04-29T13:14:44-04:00</ImporterTime>
+  <ImporterTime>2016-02-15T16:38:56-05:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
-  <ProcessorTime>2015-04-29T13:14:44-04:00</ProcessorTime>
+  <ProcessorTime>2016-02-15T16:38:56-05:00</ProcessorTime>
   <Parameters>
     <Key>TextureFormat</Key>
     <Value>Compressed</Value>

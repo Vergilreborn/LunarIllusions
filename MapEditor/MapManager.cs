@@ -80,6 +80,7 @@ namespace MapEditor
 
         }
 
+        //Testing the dynamic function call 
         public void LoremIpsum()
         {
             Console.WriteLine("LoremIpsum");
