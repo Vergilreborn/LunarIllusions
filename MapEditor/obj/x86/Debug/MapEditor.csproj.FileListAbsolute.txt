@@ -111,3 +111,4 @@ C:\Users\Amartin\Desktop\GameDevelopment\LunarIllusions\MapEditor\bin\Windows\De
 C:\Users\Amartin\Desktop\GameDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.Direct3D9.dll
 C:\Users\Amartin\Desktop\GameDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\Amartin\Desktop\GameDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\MapEditor\bin\Windows\Debug\MapEditor.exe.config

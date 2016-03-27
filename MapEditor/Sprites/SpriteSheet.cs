@@ -63,8 +63,8 @@ namespace MapEditor.Sprites
             
             MouseController mouse = MapManager.Instance.MouseObject; 
             
-            int xTileOver = (int)((camPosition.X - mouse.Position.X) / Configuration.DefaultTileWidth);
-            int yTileOver = (int)((camPosition.Y - mouse.Position.Y)  / Configuration.DefaultTileHeight);
+            int xTileOver = (int)((mouse.Position.X - camPosition.X) / Configuration.DefaultTileWidth);
+            int yTileOver = (int)((mouse.Position.Y - camPosition.Y)  / Configuration.DefaultTileHeight);
             bool validXTile = xTileOver < TileXCount && xTileOver > -1;
             bool validYTile = yTileOver < TileYCount && yTileOver > -1;
 
@@ -92,11 +92,12 @@ namespace MapEditor.Sprites
             //Texture 
             foreach (Tile tile in Tiles)
             {
+             
                 Rectangle destRec = new Rectangle(tile.DestinationRectangle.X + (int)camPosition.X
                                                 , tile.DestinationRectangle.Y + (int)camPosition.Y
                                                 , tile.DestinationRectangle.Width
                                                 , tile.DestinationRectangle.Height);
-                spriteBatch.Draw(Texture, destRec, Color.White);
+                spriteBatch.Draw(Texture, destRec,tile.DestinationRectangle, Color.White);
                 ContentConfiguration.Instance.DrawRectangle(spriteBatch, destRec, Color.DarkGray);
             }
 
@@ -106,15 +107,17 @@ namespace MapEditor.Sprites
                                                 , Selected.DestinationRectangle.Y + (int)camPosition.Y
                                                 , Selected.DestinationRectangle.Width
                                                 , Selected.DestinationRectangle.Height);
-                spriteBatch.Draw(whiteRectangle, destRec, new Color(Color.Blue, Configuration.OpacityLevel));
+                spriteBatch.Draw(whiteRectangle, destRec, Selected.DestinationRectangle, new Color(Color.Blue, Configuration.OpacityLevel));
                 ContentConfiguration.Instance.DrawRectangle(spriteBatch, destRec, Color.DarkRed);
-            }else if (CurrentOver != null)
+            }
+
+            if (CurrentOver != null)
             {
                 Rectangle destRec = new Rectangle(CurrentOver.DestinationRectangle.X + (int)camPosition.X
                                                 , CurrentOver.DestinationRectangle.Y + (int)camPosition.Y
                                                 , CurrentOver.DestinationRectangle.Width
                                                 , CurrentOver.DestinationRectangle.Height);
-                spriteBatch.Draw(whiteRectangle, destRec, new Color(Color.Red,Configuration.OpacityLevel));
+                spriteBatch.Draw(whiteRectangle, destRec,CurrentOver.DestinationRectangle, new Color(Color.Red,Configuration.OpacityLevel));
                 ContentConfiguration.Instance.DrawRectangle(spriteBatch, destRec, Color.DarkRed);
             }
 

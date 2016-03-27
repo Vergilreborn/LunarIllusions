@@ -19,7 +19,7 @@ namespace MapEditor.Map
         private int defaultTileHeight;
 
         private TileType type = TileType.Default;
-
+      
         public Rectangle DestinationRectangle
         {
             get

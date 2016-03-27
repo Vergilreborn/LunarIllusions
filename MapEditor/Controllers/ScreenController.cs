@@ -85,8 +85,12 @@ namespace MapEditor.Controllers
 
         internal void Draw(SpriteBatch spriteBatch)
         {
-            //GameState will dictate this drawing stuff
-            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, transform);
+            //GameState will dictate the order and alpha state of drawings
+            //moves the camera around depending on the position
+            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, null, null, null, null, transform);
+
+            //spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, null, null, null, null, transform);
+
         }
     }
 }
