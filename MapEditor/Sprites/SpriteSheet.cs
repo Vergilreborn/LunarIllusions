@@ -26,6 +26,7 @@ namespace MapEditor.Sprites
         private Tile CurrentOver;
         private Tile Selected;
 
+      
         public SpriteSheet()
         {
             this.TabName = "";
@@ -82,6 +83,18 @@ namespace MapEditor.Sprites
                 
             }
         }
+
+        internal Texture2D GetTexture()
+        {
+            return Texture;
+        }
+
+        internal Tile SelectedTile()
+        {
+            return Selected;
+        }
+
+        
 
         internal void Draw(SpriteBatch spriteBatch, Vector2 camPosition)
         {

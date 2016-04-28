@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
+using MapEditor.Map;
 
 namespace MapEditor.Sprites
 {
@@ -46,6 +47,16 @@ namespace MapEditor.Sprites
             {
                 sheet.Draw(spriteBatch,camPosition);
             }
+        }
+
+        internal Tile SelectedTile()
+        {
+            return active.SelectedTile();
+        }
+
+        internal SpriteSheet SelectedSpriteSheet()
+        {
+            return active;
         }
     }
 }

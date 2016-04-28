@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using MapEditor.Map;
 using MapEditor.Controllers;
 using System.Reflection;
+using MapEditor.Sprites;
 
 namespace MapEditor
 {
@@ -50,7 +51,8 @@ namespace MapEditor
             MouseObject.Update(gameTime);
             KeyboardObject.Update(gameTime);
 
-            CurrentMap.Update(gameTime, MouseObject);
+            if(!SpriteSheetManager.Instance.IsOpen)
+                CurrentMap.Update(gameTime, MouseObject);
             //    throw new NotImplementedException();
         }
 

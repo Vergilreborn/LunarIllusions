@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MapEditor.Controllers;
-
+using MapEditor.Sprites;
 
 namespace MapEditor.Map
 {
@@ -78,7 +78,10 @@ namespace MapEditor.Map
             //Draw selected Tile
             if(mouse.LeftMouseAction == MouseAction.MouseDown)
             {
-
+                if (CurrentOver != null)
+                {
+                    CurrentOver.SetTile(SpriteSheetManager.Instance.GetSelectedSpriteSheet());
+                }
             }
         }
 
@@ -90,7 +93,14 @@ namespace MapEditor.Map
 
             foreach (Tile tile in Tiles)
             {
-                spriteBatch.Draw(whiteRectangle, tile.DestinationRectangle, Color.White);
+                if (tile.HasSelectedTile())
+                {
+                    spriteBatch.Draw(tile.GetTexture(), tile.DestinationRectangle, tile.GetSourceRectangle(), Color.White);
+                }
+                else
+                {
+                    spriteBatch.Draw(whiteRectangle, tile.DestinationRectangle, Color.White);
+                }
                 ContentConfiguration.Instance.DrawRectangle(spriteBatch, tile.DestinationRectangle, Color.DarkGray);
             }
 

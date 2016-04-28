@@ -4,7 +4,7 @@
 	    <TabName>Test Objects</TabName>
 		  <TileWidth>32</TileWidth>
 		  <TileHeight>32</TileHeight>
-		  <ImageFile>SpriteSheet/Test</ImageFile>
+		  <ImageFile>SpriteSheet/Test2</ImageFile>
     </SpriteSheet>
   </SpriteSheets>
 </SpriteSheetConfiguration>

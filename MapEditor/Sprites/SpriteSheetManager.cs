@@ -6,6 +6,7 @@ using MapEditor.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
+using MapEditor.Map;
 
 namespace MapEditor.Sprites
 {
@@ -14,6 +15,20 @@ namespace MapEditor.Sprites
         //Create spritesheet tabs
 
         SpriteSheetConfiguration SpriteSheetConfig;
+
+        private static SpriteSheetManager _instance;
+        public static SpriteSheetManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new SpriteSheetManager();
+                return _instance;
+            }
+        }
+
+
+        public bool IsOpen = false;
 
         public SpriteSheetManager()
         {
@@ -43,6 +58,11 @@ namespace MapEditor.Sprites
         internal void Draw(SpriteBatch spriteBatch, Vector2 camPosition)
         {
             this.SpriteSheetConfig.Draw(spriteBatch, camPosition);
+        }
+
+        internal SpriteSheet GetSelectedSpriteSheet()
+        {
+            return this.SpriteSheetConfig.SelectedSpriteSheet();
         }
     }
 }
