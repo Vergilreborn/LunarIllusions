@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 
-namespace MapEditor.Controllers
+namespace LunarIllusions.Controllers
 {
     class ButtonController
     {

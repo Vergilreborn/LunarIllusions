@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MapEditor.Controllers;
-using MapEditor.Sprites;
+using LunarIllusions.Controllers;
+using LunarIllusions.Sprites;
 
-namespace MapEditor.Map
+namespace LunarIllusions.Map
 {
     class TileSet
     {

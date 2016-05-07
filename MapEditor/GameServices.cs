@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 
 
-namespace MapEditor
+namespace LunarIllusions
 {
     public static class GameServices
     {

@@ -5,8 +5,8 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-using MapEditor.Map;
-namespace MapEditor.Controllers
+using LunarIllusions.Map;
+namespace LunarIllusions.Controllers
 {
     //This object is connected to the mouse
     class TileSelectorController

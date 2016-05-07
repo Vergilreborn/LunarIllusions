@@ -6,7 +6,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace MapEditor.Helper
+namespace LunarIllusions.Helper
 {
     class XmlObject<T>
     {

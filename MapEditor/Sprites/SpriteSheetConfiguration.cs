@@ -5,9 +5,9 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
-using MapEditor.Map;
+using LunarIllusions.Map;
 
-namespace MapEditor.Sprites
+namespace LunarIllusions.Sprites
 {
     public class SpriteSheetConfiguration
     {

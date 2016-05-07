@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
-using MapEditor.Sprites;
+using LunarIllusions.Sprites;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace MapEditor.Map
+namespace LunarIllusions.Map
 {
     class Tile
     {

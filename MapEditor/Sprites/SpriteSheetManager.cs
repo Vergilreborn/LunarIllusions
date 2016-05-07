@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MapEditor.Helper;
+using LunarIllusions.Helper;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
-using MapEditor.Map;
+using LunarIllusions.Map;
 
-namespace MapEditor.Sprites
+namespace LunarIllusions.Sprites
 {
     class SpriteSheetManager
     {

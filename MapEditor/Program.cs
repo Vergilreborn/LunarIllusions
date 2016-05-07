@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MapEditor
+namespace LunarIllusions
 {
 #if WINDOWS || LINUX
     /// <summary>

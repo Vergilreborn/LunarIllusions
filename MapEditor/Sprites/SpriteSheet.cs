@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MapEditor.Map;
-using MapEditor.Controllers;
+using LunarIllusions.Map;
+using LunarIllusions.Controllers;
 using Microsoft.Xna.Framework.Content;
 
-namespace MapEditor.Sprites
+namespace LunarIllusions.Sprites
 {
     public class SpriteSheet
     {

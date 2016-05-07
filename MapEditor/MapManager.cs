@@ -1,12 +1,12 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MapEditor.Map;
-using MapEditor.Controllers;
+using LunarIllusions.Map;
+using LunarIllusions.Controllers;
 using System.Reflection;
-using MapEditor.Sprites;
+using LunarIllusions.Sprites;
 
-namespace MapEditor
+namespace LunarIllusions
 {
     internal class MapManager
     {

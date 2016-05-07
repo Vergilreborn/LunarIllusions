@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using MapEditor.Controllers;
+using LunarIllusions.Controllers;
 
-namespace MapEditor.Map
+namespace LunarIllusions.Map
 {
     class MapScreen
     {

@@ -1,4 +1,6 @@
-﻿using Microsoft.Xna.Framework;
+﻿using LunarIllusions.Managers;
+using LunarIllusions.Services;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -11,10 +13,12 @@ namespace LunarIllusions
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        GameManager gameManager;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
+            gameManager = new GameManager();
             Content.RootDirectory = "Content";
         }
 
@@ -26,6 +30,10 @@ namespace LunarIllusions
         /// </summary>
         protected override void Initialize()
         {
+            InputService.Instance.Initalize();
+            GameServices.Instance.AddService(GraphicsDevice);
+            GameServices.Instance.AddService(Content);
+            gameManager.Initialize();
             base.Initialize();
         }
 
@@ -37,8 +45,9 @@ namespace LunarIllusions
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            gameManager.LoadContent();
 
-            
+
         }
 
         /// <summary>
@@ -47,7 +56,7 @@ namespace LunarIllusions
         /// </summary>
         protected override void UnloadContent()
         {
-            
+            gameManager.UnloadContent();
         }
 
         /// <summary>
@@ -59,8 +68,8 @@ namespace LunarIllusions
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
-            
+            InputService.Instance.Update(gameTime);
+            gameManager.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -73,7 +82,10 @@ namespace LunarIllusions
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            
+            spriteBatch.Begin();
+            InputService.Instance.Draw(gameTime,spriteBatch);
+            gameManager.Draw(gameTime,spriteBatch);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

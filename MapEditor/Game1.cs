@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using MapEditor.Controllers;
-using MapEditor.Sprites;
+using LunarIllusions.Controllers;
+using LunarIllusions.Sprites;
 
-namespace MapEditor
+namespace LunarIllusions
 {
     /// <summary>
     /// This is the main type for your game.
