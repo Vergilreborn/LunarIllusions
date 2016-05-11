@@ -50,12 +50,17 @@
     <Compile Include="Controllers\KeyboardController.cs" />
     <Compile Include="Controllers\MouseAction.cs" />
     <Compile Include="Controllers\MouseController.cs" />
+    <Compile Include="Enumerators\TileType.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\GameTile.cs" />
+    <Compile Include="GameObjects\MapObject.cs" />
     <Compile Include="GameObjects\PlayerObject.cs" />
     <Compile Include="HardCode\HardCoded.cs" />
     <Compile Include="Helper\XmlObject.cs" />
+    <Compile Include="Managers\FrameRateManager.cs" />
     <Compile Include="Managers\GameManager.cs" />
+    <Compile Include="Managers\MapManager.cs" />
     <Compile Include="Services\GameCameraService.cs" />
     <Compile Include="Services\GameServices.cs" />
     <Compile Include="Program.cs" />
@@ -74,7 +79,9 @@
     <Content Include="Content\Player\player.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="GameObjectsData\PlayerBase.xml" />
+    <Content Include="GameObjectsData\PlayerBase.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>

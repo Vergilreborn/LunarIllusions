@@ -54,7 +54,7 @@ namespace LunarIllusions.Helper
             
             using (Stream stream = new MemoryStream())
             {
-                byte[] data = System.Text.Encoding.UTF8.GetBytes(File.ReadAllText(path));
+                byte[] data = System.Text.Encoding.UTF8.GetBytes(File.ReadAllText(@"GameObjectsData\" + path));
                 stream.Write(data, 0, data.Length);
                 stream.Position = 0;
                 DataContractSerializer deserializer = new DataContractSerializer(toType);

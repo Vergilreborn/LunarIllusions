@@ -50,33 +50,33 @@ namespace LunarIllusions.Services
         public void Update(GameTime gametime)
         {
 
-            KeyboardController keyboardController = InputService.Instance.Keyboard;
+            //KeyboardController keyboardController = InputService.Instance.Keyboard;
 
-            bool moveDown = keyboardController.KeyDown("Down");
-            bool moveUp = keyboardController.KeyDown("Up");
-            bool moveLeft = keyboardController.KeyDown("Left");
-            bool moveRight = keyboardController.KeyDown("Right");
+            //bool moveDown = keyboardController.KeyDown("Down");
+            //bool moveUp = keyboardController.KeyDown("Up");
+            //bool moveLeft = keyboardController.KeyDown("Left");
+            //bool moveRight = keyboardController.KeyDown("Right");
 
-            Vector2 moveOffset = Vector2.Zero;
-            if (moveUp)
-                moveOffset.Y -= 5;
-
-
-            if (moveDown)
-                moveOffset.Y += 5;
+            //Vector2 moveOffset = Vector2.Zero;
+            //if (moveUp)
+            //    moveOffset.Y -= 5;
 
 
-            if (moveLeft)
-                moveOffset.X -= 5;
+            //if (moveDown)
+            //    moveOffset.Y += 5;
 
 
-            if (moveRight)
-                moveOffset.X += 5;
+            //if (moveLeft)
+            //    moveOffset.X -= 5;
 
-            source += moveOffset;
-            currentOffset += moveOffset;
 
-            InputService.Instance.Mouse.UpdateOffset(moveOffset);
+            //if (moveRight)
+            //    moveOffset.X += 5;
+
+            //source += moveOffset;
+            //currentOffset += moveOffset;
+
+            //InputService.Instance.Mouse.UpdateOffset(moveOffset);
 
             Vector2 objectPosition = source;
 

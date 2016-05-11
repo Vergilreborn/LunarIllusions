@@ -26,8 +26,8 @@ namespace LunarIllusions.HardCode
             {
                 ActionName = "Default",
                 IsLooping = true,
-                AnimationFrames = 1,
-                AnimationTimer = 100f,
+                AnimationFrames = 4,
+                AnimationTimer = 200f,
                 TextureName = "Player/player",
                 StartSource = new Rectangle(0,0,32,32)
 
@@ -36,10 +36,10 @@ namespace LunarIllusions.HardCode
             {
                 ActionName = "Walking",
                 IsLooping = true,
-                AnimationFrames = 2,
-                AnimationTimer = 150f,
+                AnimationFrames = 4,
+                AnimationTimer = 175f,
                 TextureName = "Player/player",
-                StartSource = new Rectangle(0, 0, 32, 32)
+                StartSource = new Rectangle(0, 32, 32, 32)
 
             });
          

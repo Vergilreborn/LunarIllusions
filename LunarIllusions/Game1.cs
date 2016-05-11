@@ -14,11 +14,13 @@ namespace LunarIllusions
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         GameManager gameManager;
+        FrameRateManager frameRateManager;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             gameManager = new GameManager();
+            frameRateManager = new FrameRateManager();
             Content.RootDirectory = "Content";
         }
 
@@ -69,8 +71,12 @@ namespace LunarIllusions
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
             InputService.Instance.Update(gameTime);
-            gameManager.Update(gameTime);
+           
+            if (frameRateManager.AllowUpdate()) { 
+                gameManager.Update(gameTime);
+            }
 
+            frameRateManager.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -80,13 +86,16 @@ namespace LunarIllusions
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.White);
 
-            spriteBatch.Begin();
-            InputService.Instance.Draw(gameTime,spriteBatch);
-            gameManager.Draw(gameTime,spriteBatch);
+           
+            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, RasterizerState.CullCounterClockwise);
+            
+            InputService.Instance.Draw(gameTime, spriteBatch);
+            gameManager.Draw(gameTime, spriteBatch);
+            
             spriteBatch.End();
-
+          
             base.Draw(gameTime);
         }
     }

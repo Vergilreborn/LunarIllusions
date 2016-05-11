@@ -76,3 +76,4 @@ C:\Users\Amartin\Desktop\GameDevelopment\LunarIllusions\LunarIllusions\bin\Windo
 C:\Users\Amartin\Desktop\GameDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\LunarIllusions.exe.config
 C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\Content\Player\player.png
+C:\Users\Alexander\Desktop\GamesDevelopment\LunarIllusions\LunarIllusions\bin\Windows\Debug\GameObjectsData\PlayerBase.xml

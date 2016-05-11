@@ -16,14 +16,15 @@ namespace LunarIllusions.Managers
 
         public GameManager()
         {
-            player = HardCode.HardCoded.GeneratePlayerObject();
+            player = XmlObject<PlayerObject>.Load(@"PlayerBase.xml");//HardCode.HardCoded.GeneratePlayerObject();
+            player.Destination = new Rectangle(32, 32, 32, 32); //Set when loading Map
         }
        
         public void Initialize()
         {
             
             player.Initialize();
-            XmlObject<PlayerObject>.Save(@"C:\Users\Alexander\Desktop\PlayerObject.xml", player);
+            
         }
 
         public void Update(GameTime gameTime)

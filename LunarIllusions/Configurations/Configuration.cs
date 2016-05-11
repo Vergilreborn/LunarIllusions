@@ -13,6 +13,11 @@ namespace LunarIllusions.Configurations
         public static int DefaultTileWidth  = 32; //Default tile width
         public static int DefaultTileHeight = 32; //Default tile height
         public static int LineWidth         = 1;  //Default line thickness of outlining tiles
+        public static int FixedFPS          = 60;
+        #endregion
+
+        #region Boolean based configuration
+        public static bool SetFixedFPS = false;
         #endregion
 
         #region Float based configuration
