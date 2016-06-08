@@ -28,17 +28,34 @@ namespace LunarIllusions.GameObjects
         [DataMember()]
         public bool StaticSpeed;
         [DataMember()]
-        private float MaxSpeed = 0f;
+        public float MaxSpeed = 0f;
         [DataMember()]
         private float Velocity = 0f;
-
+        [DataMember()]
+        private bool Gravity = false;
         [NonSerialized()]
         public Rectangle Destination;
         [NonSerialized()]
         public float CurrentSpeed = 0f;
         [NonSerialized()]
         private Vector2 _Origin;
-        
+        [NonSerialized()]
+        public bool IsJumping = false;
+        [NonSerialized()]
+        private Vector2 _Center;
+
+        public bool GravitySet
+        {
+            get
+            {
+                return Gravity;
+            }
+             set
+            {
+                Gravity = value;
+            }
+        }
+
         public Vector2 Origin
         {
             get
@@ -48,8 +65,18 @@ namespace LunarIllusions.GameObjects
                 return _Origin;
             }
         }
-
         
+        public Vector2 Center
+        {
+            get
+            {
+                
+                    
+                return new Vector2(Destination.X + Width / 2, Destination.Y + Height / 2);
+            }
+        }
+
+
 
         public abstract void Initialize();
         public abstract void Load();

@@ -15,9 +15,11 @@ namespace LunarIllusions.GameObjects
     {
 
         [DataMember()]
-        Vector2 position;
+        public Vector2 position;
         [DataMember()]
-        TileType type;
+        public TileType type;
+        [DataMember()]
+        public bool ValidTile;
 
         public GameTile()
         {

@@ -12,29 +12,26 @@ namespace LunarIllusions.Managers
 {
     class GameManager
     {
-        PlayerObject player;
-
+        
         public GameManager()
         {
-            player = XmlObject<PlayerObject>.Load(@"PlayerBase.xml");//HardCode.HardCoded.GeneratePlayerObject();
-            player.Destination = new Rectangle(32, 32, 32, 32); //Set when loading Map
+         
         }
        
         public void Initialize()
         {
-            
-            player.Initialize();
-            
+                   
         }
 
         public void Update(GameTime gameTime)
         {
-            player.Update(gameTime);
+
+      
         }
         
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            player.Draw(gameTime,spriteBatch);
+         
         }
 
         internal void UnloadContent()

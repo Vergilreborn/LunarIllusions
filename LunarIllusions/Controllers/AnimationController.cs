@@ -38,6 +38,11 @@ namespace LunarIllusions.Controllers
 
         }
 
+        public Animation GetAnimation(String animationName)
+        {
+            return Name_Animation[animationName];
+        }
+
         public void SetDefaultAnimation()
         {
             if (CurrentAnimation == null || CurrentAnimation.ActionName != "Default")

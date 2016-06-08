@@ -14,14 +14,17 @@ namespace LunarIllusions
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         GameManager gameManager;
+        MapManager mapManager;
         FrameRateManager frameRateManager;
+        GameCameraService camService;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             gameManager = new GameManager();
+            mapManager = new MapManager();
             frameRateManager = new FrameRateManager();
-            Content.RootDirectory = "Content";
+            Content.RootDirectory = "Content"; 
         }
 
         /// <summary>
@@ -35,7 +38,10 @@ namespace LunarIllusions
             InputService.Instance.Initalize();
             GameServices.Instance.AddService(GraphicsDevice);
             GameServices.Instance.AddService(Content);
+            camService = new GameCameraService(graphics.GraphicsDevice.Viewport);
+            GameServices.Instance.AddService(camService);
             gameManager.Initialize();
+            mapManager.Initialize();
             base.Initialize();
         }
 
@@ -71,9 +77,13 @@ namespace LunarIllusions
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
             InputService.Instance.Update(gameTime);
-           
+
+            if (InputService.Instance.Keyboard.KeyPressed("F"))
+                graphics.ToggleFullScreen();
+
             if (frameRateManager.AllowUpdate()) { 
                 gameManager.Update(gameTime);
+                mapManager.Update(gameTime);
             }
 
             frameRateManager.Update(gameTime);
@@ -88,12 +98,13 @@ namespace LunarIllusions
         {
             GraphicsDevice.Clear(Color.White);
 
-           
-            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, RasterizerState.CullCounterClockwise);
-            
+            // spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, RasterizerState.CullCounterClockwise);
+
+            mapManager.Draw(gameTime, spriteBatch);
             InputService.Instance.Draw(gameTime, spriteBatch);
             gameManager.Draw(gameTime, spriteBatch);
-            
+          
+
             spriteBatch.End();
           
             base.Draw(gameTime);

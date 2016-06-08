@@ -1,0 +1,52 @@
+<EnemyObject xmlns="http://schemas.datacontract.org/2004/07/LunarIllusions.GameObjects" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <AnimationHandler xmlns:a="http://schemas.datacontract.org/2004/07/LunarIllusions.Controllers">
+    <a:Name_Animation xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <b:KeyValueOfstringAnimationWbZZS5xu>
+        <b:Key>Default</b:Key>
+        <b:Value xmlns:c="http://schemas.datacontract.org/2004/07/LunarIllusions.Controllers.Objects">
+          <c:ActionName>Default</c:ActionName>
+          <c:AnimationFrames>4</c:AnimationFrames>
+          <c:AnimationTimer>200</c:AnimationTimer>
+          <c:IsLooping>true</c:IsLooping>
+          <c:StartSource xmlns:d="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <d:Height>32</d:Height>
+            <d:Width>32</d:Width>
+            <d:X>0</d:X>
+            <d:Y>0</d:Y>
+          </c:StartSource>
+          <c:TextureName>Enemy/enemy</c:TextureName>
+        </b:Value>
+      </b:KeyValueOfstringAnimationWbZZS5xu>
+      <b:KeyValueOfstringAnimationWbZZS5xu>
+        <b:Key>Walking</b:Key>
+        <b:Value xmlns:c="http://schemas.datacontract.org/2004/07/LunarIllusions.Controllers.Objects">
+          <c:ActionName>Walking</c:ActionName>
+          <c:AnimationFrames>4</c:AnimationFrames>
+          <c:AnimationTimer>175</c:AnimationTimer>
+          <c:IsLooping>true</c:IsLooping>
+          <c:StartSource xmlns:d="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <d:Height>32</d:Height>
+            <d:Width>32</d:Width>
+            <d:X>0</d:X>
+            <d:Y>32</d:Y>
+          </c:StartSource>
+          <c:TextureName>Enemy/enemy</c:TextureName>
+        </b:Value>
+      </b:KeyValueOfstringAnimationWbZZS5xu>
+    </a:Name_Animation>
+  </AnimationHandler>
+  <Gravity>true</Gravity>
+  <Height>32</Height>
+  <MaxSpeed>15</MaxSpeed>
+  <Name>EnemyMan2</Name>
+  <Source xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+    <a:Height>32</a:Height>
+    <a:Width>32</a:Width>
+    <a:X>0</a:X>
+    <a:Y>0</a:Y>
+  </Source>
+  <Speed>5</Speed>
+  <StaticSpeed>false</StaticSpeed>
+  <Velocity>0</Velocity>
+  <Width>32</Width>
+</EnemyObject>
